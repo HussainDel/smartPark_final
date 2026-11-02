@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Parkline runtime database
+/data/*.db
+/data/*.db-journal
+/data/*.db-wal
+/data/*.db-shm
+
+# Node dependencies
+node_modules/
+package-lock.json

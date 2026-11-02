@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parkline — Smart Parking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="brand" data-action="home" aria-label="Parkline home">
+    <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19V5h7a4 4 0 0 1 0 8H5"/><path d="M16 16h3m-1.5-1.5v3"/></svg></span>
+    parkline
+  </button>
+  <div class="user-area" id="userArea"><span class="top-label">Smart parking · City access</span></div>
+</header>
+
+<main class="page">
+  <section class="postcard" id="postcard" aria-live="polite">
+    <div id="screen"></div>
+  </section>
+</main>
+<footer class="footer"><span>PARKLINE / PARKING, MADE SIMPLE</span><span>NODE API · MYSQL SCHEMA INCLUDED</span></footer>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="toast" id="toast" role="status"></div>
+<noscript><p style="padding:24px;font-family:sans-serif">Parkline needs JavaScript enabled to book parking.</p></noscript>
+<script src="/app.js"></script>
+</body>
+</html>

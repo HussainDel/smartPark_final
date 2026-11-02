@@ -1,0 +1,24 @@
+{
+  "name": "parkline-smart-parking",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Parkline — smart parking booking system. Zero-dependency Node.js API (node:sqlite) + single-page frontend, MySQL schema included.",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "reset": "RESET_DB=1 node server.js",
+    "seed:mysql": "mysql -u root -p < database/schema.sql"
+  },
+  "keywords": [
+    "smart-parking",
+    "node",
+    "sqlite",
+    "mysql",
+    "dbms-project"
+  ],
+  "license": "MIT"
+}
